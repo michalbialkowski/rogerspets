@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Roger's Pets</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat:400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body id="page--cart">
+    <div id="section--page">
+        <header id="section--header">
+            <section class="d-flex justify-content-center d-sm-none pt-3" id="section--header-logo"><a href="#"><img class="svg" src="assets/img/logo.svg"></a></section>
+            <section id="section--header--top" class="py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center justify-content-sm-end">
+                            <ul class="list-inline mb-0" id="module--header--links">
+                                <li class="list-inline-item p-0"><a class="px-3" href="logowanie.html">Rejestracja</a></li>
+                                <li class="list-inline-item p-0"><a class="px-3" href="logowanie.html">Moje konto</a></li>
+                            </ul>
+                            <div class="btn-group" role="group" id="module--header--socials"><a class="btn btn-link p-0 px-2" role="button" href="https://www.facebook.com/rogerspremium/" target="_blank"><img class="svg" src="assets/img/facebook.svg"></a><a class="btn btn-link p-0 px-2" role="button" href="https://www.instagram.com/"
+                                    target="_blank"><img class="svg" src="assets/img/instagram.svg"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section--header--navbar" class="bg-white">
+                <nav class="navbar navbar-light navbar-expand p-0">
+                    <div class="container"><a class="navbar-brand d-none d-sm-flex align-items-center m-0" id="module--header--logo" href="index.html"><span class="d-block"><img class="svg" src="assets/img/logo.svg"></span></a><button data-toggle="collapse" class="navbar-toggler"
+                            data-target="#header--nav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse d-flex justify-content-center align-items-center justify-content-sm-end"
+                            id="header--nav">
+                            <ul class="nav navbar-nav d-none d-xl-flex ml-4" id="module--header--menu">
+                                <li class="dropdown nav-item"><a class="dropdown-toggle nav-link h5 mb-0 px-3" data-toggle="dropdown" aria-expanded="false" href="category.html">Nasze produkty</a>
+                                    <div class="dropdown-menu"><a class="dropdown-item" href="category.html">Karma sucha</a><a class="dropdown-item" href="category.html">Przysmaki</a></div>
+                                </li>
+                                <li class="dropdown nav-item"><a class="dropdown-toggle nav-link h5 mb-0 px-3" data-toggle="dropdown" aria-expanded="false" href="category.html">Inne produkty</a>
+                                    <div class="dropdown-menu"><a class="dropdown-item" href="category.html">Karma Aldog</a></div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link h5 mb-0 px-3" href="content.html">O nas</a></li>
+                                <li class="nav-item"><a class="nav-link h5 mb-0 px-3" href="gallery.html">Galeria</a></li>
+                                <li class="nav-item"><a class="nav-link h5 mb-0 px-3" href="content.html">Współpraca</a></li>
+                                <li class="nav-item"><a class="nav-link h5 mb-0 px-3" href="contact.html">Kontakt</a></li>
+                            </ul><button class="btn btn-link btn-lg d-xl-none ml-4 p-0" data-toggle="modal" data-target="#nav-modal" type="button"><i class="fas fa-bars d-block text-dark" style="font-size: 40px;"></i></button><a class="btn btn-secondary d-flex justify-content-between align-items-center py-3 ml-4"
+                                role="button" id="module--header--cart" href="koszyk.html"><span class="d-flex flex-column align-items-end"><span>2 szt.</span><span>69,98 PLN</span></span><img class="ml-3" src="assets/img/cart.svg"></a></div>
+                    </div>
+                </nav>
+                <div class="modal fade" role="dialog" tabindex="-1" id="nav-modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content border-0">
+                            <div class="modal-body d-flex flex-column justify-content-center align-items-stretch">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="btn-group justify-content-end w-100" role="group"><button class="btn btn-link d-flex justify-content-center align-items-center p-0" data-toggle="modal" data-target="#nav-modal" type="button"><i class="fas fa-times text-dark" style="font-size: 40px;"></i></button></div>
+                                            <ul
+                                                class="list-group">
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="category.html">Nasze produkty</a></li>
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="category.html">Inne produkty</a></li>
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="content.html">O nas</a></li>
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="content.html">Dlaczego my?</a></li>
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="content.html">Współpraca</a></li>
+                                                <li class="list-group-item h4 m-0 p-1"><a class="text-dark" href="content.html">Kontakt</a></li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main id="section--main" class="pb-5">
+            <section id="section--main--slider" class="mb-5 pb-4">
+                <div class="carousel slide" data-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="slide-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5 col-xl-5 d-none d-lg-flex align-items-center">
+                                        <figure class="figure"><img class="img-fluid figure-img" src="assets/img/slide1-image.png"></figure>
+                                    </div>
+                                    <div class="col-sm-10 col-md-8 col-lg-5 col-xl-5">
+                                        <div class="slider-content">
+                                            <h1 class="display-4">Karmy<br><strong>Roger's Pets</strong></h1>
+                                            <p class="lead mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;Vivamus ullamcorper porta arcu et lobortis.</p>
+                                            <div class="btn-group btn-group-lg w-100 mt-4" role="group"><a class="btn btn-primary p-3 px-5 ml-sm-5" role="button" href="category.html"><span class="h4 m-0"><strong>Zobacz naszą ofertę</strong></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="slide-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5 col-xl-4 d-none d-lg-flex justify-content-end align-items-center">
+                                        <figure class="figure"><img class="img-fluid figure-img" src="assets/img/slide2-image.png"></figure>
+                                    </div>
+                                    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                                        <div class="slider-content">
+                                            <h1 class="display-4">Karmy&nbsp;<strong>Aldog</strong></h1>
+                                            <p class="lead mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;Vivamus ullamcorper porta arcu et lobortis.</p>
+                                            <div class="btn-group btn-group-lg justify-content-end w-100 mt-4" role="group"><a class="btn btn-primary p-3 px-5" role="button" href="category.html"><span class="h4 m-0"><strong>Zobacz ofertę Aldog</strong></span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"><i class="fa fa-angle-left text-black-50"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel" role="button"
+                            data-slide="next"><i class="fa fa-angle-right text-black-50"></i><span class="sr-only">Next</span></a></div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                </div>
+            </section>
+            <section id="section--main--promotions" class="mb-5 pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-8 col-xl-6 offset-lg-2 offset-xl-0 d-flex flex-row align-items-stretch py-3">
+                            <div class="card product--card border-0 weekly-promo w-100">
+                                <div class="card-body d-flex flex-column justify-content-between align-items-stretch p-0">
+                                    <h1 class="text-sm-left text-center px-4 mt-4" style="line-height: 1.25em;">Promocja tygodnia</h1>
+                                    <div class="d-flex flex-column justify-content-between align-items-stretch flex-sm-row">
+                                        <div class="d-flex flex-row justify-content-center align-items-stretch flex-sm-column justify-content-sm-end">
+                                            <p class="d-flex justify-content-center align-items-center h3 m-0 p-3">-25%</p>
+                                            <p class="d-flex flex-column justify-content-center align-items-start m-0 bg-secondary text-white p-3 py-4"><span style="line-height: 1em;">Do końca:</span><span class="lead mt-2" style="line-height: 1em;"><strong>25:54:16</strong></span></p>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between align-items-center align-items-sm-stretch mx-4 mt-3 mt-sm-0">
+                                            <div><img src="assets/img/product2.jpg"></div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between align-items-stretch mt-3 mt-sm-0">
+                                            <div class="px-3">
+                                                <h4 class="card-title"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                                <div class="d-flex">
+                                                    <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                                    <p class="text-nowrap text-center text-black-50 m-0"><small class="ml-3"><span style="text-decoration: line-through;">59,00 PLN</span></small></p>
+                                                </div>
+                                            </div>
+                                            <form>
+                                                <div class="form-group d-flex justify-content-end mb-0"><button class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0 py-3" type="button"><span class="mr-2 text-right text-dark"><strong>Dodaj</strong><br><strong>do koszyka</strong></span><img class="svg" src="assets/img/cart.svg"></button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 offset-md-0 offset-lg-2 offset-xl-0 py-3">
+                            <div class="card product--card border-0">
+                                <div class="card-body">
+                                    <div class="element--square">
+                                        <div><img src="assets/img/product1.jpg"></div>
+                                    </div>
+                                    <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                    <form>
+                                        <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                            <div class="col-auto">
+                                                <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                            </div>
+                                            <div class="col-auto"><button class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" type="button"><img class="svg" src="assets/img/cart.svg"></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 offset-md-0 py-3">
+                            <div class="card product--card border-0">
+                                <div class="card-body">
+                                    <div class="element--square">
+                                        <div><img src="assets/img/product2.jpg"></div>
+                                    </div>
+                                    <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                    <form>
+                                        <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                            <div class="col-auto">
+                                                <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="text-nowrap text-center text-black-50 m-0"><small class="ml-2"><span style="text-decoration: line-through;">59,00 PLN</span></small></p>
+                                            </div>
+                                            <div class="col-auto"><button class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" type="button"><img class="svg" src="assets/img/cart.svg"></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section--main--whybuy" class="mb-5 pb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="jumbotron bg-primary text-white px-5 position-relative" style="background-image: url(&quot;assets/img/dlaczegokupic-bg.jpg&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;">
+                                <section class="d-flex flex-column justify-content-between align-items-center flex-md-row flex-lg-row">
+                                    <h1 class="w-50 module__title" style="line-height: 1em;"><span class="d-block display-3" style="line-height: 1em;font-weight: bold;"><strong>Dlaczego</strong></span><span class="d-block" style="line-height: 1em;font-weight: bold;">kupować u nas?</span></h1>
+                                    <p class="h1 w-50 module__subtitle"
+                                        style="font-family: Caveat;line-height: 1em;"><span class="d-inline-block text-center" style="transform: rotate(-15deg); width: 66%;"><strong>Miłość od pierwszego</strong><br><strong>zgryzienia</strong></span></p>
+                                </section>
+                                <section class="d-flex flex-column justify-content-start align-items-start flex-lg-row justify-content-lg-between align-items-lg-end w-100 mt-4">
+                                    <p class="mb-0 w-50 module__text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.&nbsp;Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in.</p>
+                                    <div
+                                        class="w-50 pl-0 pl-lg-4 pt-3 pt-lg-0"><a class="btn btn-secondary btn-lg text-white module__button" role="button" href="content.html"><span class="h3 mb-0">Czytaj więcej</span></a></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <section id="section--main--wrapper" class="mb-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="section--main--content">
+                    <section>
+                        <h1>Najczęściej kupowane</h1>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3">
+                                <div class="card product--card border-0">
+                                    <div class="card-body">
+                                        <div class="element--square">
+                                            <div><img src="assets/img/product1.jpg"></div>
+                                        </div>
+                                        <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                        <form>
+                                            <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                                </div>
+                                                <div class="col-auto"><a class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" role="button" href="koszyk.html"><img class="svg" src="assets/img/cart.svg"></a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3">
+                                <div class="card product--card border-0">
+                                    <div class="card-body">
+                                        <div class="element--square">
+                                            <div><img src="assets/img/product2.jpg"></div>
+                                        </div>
+                                        <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                        <form>
+                                            <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap text-center text-black-50 m-0"><small class="ml-2"><span style="text-decoration: line-through;">59,00 PLN</span></small></p>
+                                                </div>
+                                                <div class="col-auto"><button class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" type="button"><img class="svg" src="assets/img/cart.svg"></button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3">
+                                <div class="card product--card border-0">
+                                    <div class="card-body">
+                                        <div class="element--square">
+                                            <div><img src="assets/img/product1.jpg"></div>
+                                        </div>
+                                        <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                        <form>
+                                            <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                                </div>
+                                                <div class="col-auto"><a class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" role="button" href="koszyk.html"><img class="svg" src="assets/img/cart.svg"></a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 py-3">
+                                <div class="card product--card border-0">
+                                    <div class="card-body">
+                                        <div class="element--square">
+                                            <div><img src="assets/img/product2.jpg"></div>
+                                        </div>
+                                        <h4 class="card-title mt-3"><a href="produkt.html"><strong>Karma Aldog Mantenimento 15kg</strong></a></h4>
+                                        <form>
+                                            <div class="form-row d-flex flex-row justify-content-between align-items-center flex-nowrap mt-3">
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap m-0"><strong>49,00 PLN</strong></p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <p class="text-nowrap text-center text-black-50 m-0"><small class="ml-2"><span style="text-decoration: line-through;">59,00 PLN</span></small></p>
+                                                </div>
+                                                <div class="col-auto"><button class="btn btn-link d-flex justify-content-center align-items-center cart__btn p-0" type="button"><img class="svg" src="assets/img/cart.svg"></button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section--main--opinions" class="mb-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Opinie</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 d-flex align-items-stretch py-3">
+                            <div class="card border-0">
+                                <div class="card-body d-flex align-items-stretch">
+                                    <blockquote class="blockquote d-flex flex-column justify-content-between mb-0">
+                                        <p class="lead text-left text-dark mb-0">In ut augue magna. Fusce dui lacus, lacinia ac euismod id, elementum eget ligula<br></p>
+                                        <footer class="blockquote-footer mt-2">Jan Nowak</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex align-items-stretch py-3">
+                            <div class="card border-0">
+                                <div class="card-body d-flex align-items-stretch">
+                                    <blockquote class="blockquote d-flex flex-column justify-content-between mb-0">
+                                        <p class="lead text-left text-dark mb-0">Congue a ultricies vitae, pellentesque in diam. Sed hendrerit at sem et iaculis.<br></p>
+                                        <footer class="blockquote-footer mt-2">Jan Nowak</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 d-flex align-items-stretch py-3">
+                            <div class="card border-0">
+                                <div class="card-body d-flex align-items-stretch">
+                                    <blockquote class="blockquote d-flex flex-column justify-content-between mb-0">
+                                        <p class="lead text-left text-dark mb-0">Quisque ultricies nulla felis, a pretium erat dapibus ut.<br></p>
+                                        <footer class="blockquote-footer mt-2">Jan Nowak</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="section--main--cookies" class="position-fixed bg-dark w-100 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-between align-items-center py-3">
+                    <p class="text-justify mb-0 mr-3 pr-3 border-right border-light"><strong>W ramach naszej witryny stosujemy pliki cookies</strong> w celu świadczenia Państwu usług na najwyższym poziomie, w tym w sposób dostosowany do indywidualnych potrzeb. Korzystanie z witryny bez zmiany ustawień dotyczących cookies
+                        oznacza, że będą one zamieszczane w Państwa urządzeniu końcowym. Możecie Państwo dokonać w każdym czasie zmiany ustawień dotyczących cookies. Więcej szczegółów w naszej <a href="content.html">Polityce Cookies</a>.<br></p>
+                    <button
+                        class="btn btn-link d-flex align-items-center p-0 text-light" data-dismiss="alert" type="button"><i class="fas fa-times" style="font-size: 24px;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer id="section--footer" class="bg-white">
+        <section id="section--footer--content" class="py-4">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-0">
+                        <div class="row">
+                            <div class="col-12 col-md-auto">
+                                <div class="d-flex justify-content-center" id="module--footer--logo">
+                                    <h1 class="h3"><a href="index.html"><img src="assets/img/logo.svg"></a></h1>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-auto col-lg-auto offset-sm-1 offset-md-0 mt-sm-3 mt-md-0">
+                                <div class="d-flex flex-column flex-sm-row justify-content-sm-center justify-content-lg-between" id="module--footer--menu">
+                                    <ul class="m-0 mt-3 mt-sm-0">
+                                        <li><a href="category.html">Nasze produkty</a></li>
+                                        <li><a href="category.html">Inne produkty</a></li>
+                                        <li><a href="content.html">O nas</a></li>
+                                        <li><a href="content.html">Dlaczego my?</a></li>
+                                        <li><a href="contact.html">Kontakt</a></li>
+                                    </ul>
+                                    <ul class="m-0 mt-3 mt-sm-0">
+                                        <li><a href="logowanie.html">Nowy klient</a></li>
+                                        <li><a href="logowanie.html">Moje konto</a></li>
+                                        <li><a href="content.html">Regulamin</a></li>
+                                        <li><a href="content.html">Polityka prywatności</a></li>
+                                        <li><a href="content.html">Współpraca</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-0 mt-4 mt-xl-0">
+                        <div class="row justify-content-sm-center">
+                            <div class="col px-md-0">
+                                <div class="d-flex flex-column justify-content-center align-items-center flex-sm-row align-items-xl-start" id="module--footer--info">
+                                    <p class="text-sm-right text-center d-flex align-items-center mb-3 mb-sm-0 mb-md-5"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et lectus et purus eleifend vehicula vitae sit amet erat. Cras viverra ligula ut aliquam ultricies.</small></p><img class="ml-0 ml-sm-3" src="assets/img/puppy.png"></div>
+                            </div>
+                            <div class="col-12 col-md-auto pl-sm-0 mt-3 mt-sm-0">
+                                <div class="d-flex flex-column align-items-center align-items-md-end" id="module--footer--socials">
+                                    <h1 class="h3">Znajdź nas na</h1>
+                                    <div class="btn-group" role="group"><a class="btn btn-link p-0" role="button" href="https://www.facebook.com/rogerspremium/" target="_blank"><img class="svg" src="assets/img/facebook2.svg"></a><a class="btn btn-link p-0 ml-3" role="button" href="https://www.instagram.com/"
+                                            target="_blank"><img class="svg" src="assets/img/instagram2.svg"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section--footer--copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center mb-5" id="module--footer--copyright">
+                            <ul class="list-inline d-flex flex-column align-items-center flex-md-row m-0 text-center">
+                                <li class="list-inline-item">© 2019 Roger’s Pets. Wszelkie prawa zastrzeżone</li>
+                                <li class="list-inline-item">Realizacja: IGK</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
